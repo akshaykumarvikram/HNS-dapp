@@ -39,7 +39,7 @@ export const requestFirebaseNotificationPermissionOld = () =>
 
   export const requestFirebaseNotificationPermission = () =>
     new Promise((resolve, reject) => {
-      getToken(messaging, { vapidKey: "BNV9Y-CVwlPC41YP_YniUyhydCADOXOu_6dF823r5lw7Sc0CJyY6g_zi122cxEeeqEVa4Gl9KHqnCJjuV8k0k2I"})
+      getToken(messaging, { vapidKey: "Fill in Your VAPID Key from Firebase Portal"})
         .then((fcmToken) => {
           resolve(fcmToken);
         })
